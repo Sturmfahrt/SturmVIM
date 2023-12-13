@@ -22,6 +22,12 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim' -- powerline for neovim
   use 'nvim-treesitter/nvim-treesitter' -- mainly for good highlighting
   use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+    "hrsh7th/cmp_nvim_lsp",
+  }
+  use {
     'nvim-telescope/telescope.nvim', branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   } -- the plugin for fuzzy finding 
