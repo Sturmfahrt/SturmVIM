@@ -1,3 +1,5 @@
+-- this file is for general vim keymapings and config options that are not plugin specific.
+-- any keymaps that pertain to a specific function from a plugin are going to be that plugins config file.
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
