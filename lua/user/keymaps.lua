@@ -25,7 +25,7 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>es", ":NvimTreeOpen<CR>", opts)        -- [e]xplorer [s]how
+keymap("n", "<leader><S-e>", ":NvimTreeOpen<CR>", opts)     -- [e]xplorer open
 keymap("n", "<leader>ec", ":NvimTreeCollapse<CR>", opts)    -- [e]plorer [c]ollapse
 keymap("n", "<leader>ef", ":NvimTreeFocus<CR>", opts)       -- [e]plorer [f]ocus
 keymap("n", "<leader><S-f>", ":NvimTreeFindFile<CR>", opts) -- [e]xlporer [F]ind file
