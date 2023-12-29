@@ -26,9 +26,9 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 keymap("n", "<leader><S-e>", ":NvimTreeOpen<CR>", opts)     -- [e]xplorer open
-keymap("n", "<leader>ec", ":NvimTreeCollapse<CR>", opts)    -- [e]plorer [c]ollapse
-keymap("n", "<leader>ef", ":NvimTreeFocus<CR>", opts)       -- [e]plorer [f]ocus
-keymap("n", "<leader><S-f>", ":NvimTreeFindFile<CR>", opts) -- [e]xlporer [F]ind file
+keymap("n", "<leader>ec", ":NvimTreeCollapse<CR>", opts)    -- [c]ollapse tree
+keymap("n", "<leader>tf", ":NvimTreeFocus<CR>", opts)       -- [t]ree [f]ocus
+keymap("n", "<leader><S-f>", ":NvimTreeFindFile<CR>", opts) -- exlporer [F]ind file
 keymap("n", "<leader>eq", ":NvimTreeFocus<CR>:q<CR>", opts) -- [e]xplorer [q]uit
 
 -- Resize with arrows
