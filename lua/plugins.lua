@@ -15,4 +15,7 @@ return {
   {
     'nvim-treesitter/nvim-treesitter',
   },
+  {
+    'andweeb/presence.nvim'
+  },
 }
