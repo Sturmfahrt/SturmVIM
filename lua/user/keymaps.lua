@@ -35,6 +35,7 @@ keymap("n", "<leader>eq", ":NvimTreeFocus<CR>:q<CR>", opts) -- [e]xplorer [q]uit
 
 -- Telescope Mappings
 local TelescopeStuff = require('telescope.builtin')
+vim.keymap.set('n', '<leader><leader>', TelescopeStuff.find_files, {})  -- telescope find file keybind alternate binding
 vim.keymap.set('n', '<leader>ff', TelescopeStuff.find_files, {})  -- finder [f]ind [f]ile
 vim.keymap.set('n', '<leader>fg', TelescopeStuff.live_grep, {})   -- [f]inder [g]rep
 vim.keymap.set('n', '<leader>fb', TelescopeStuff.buffers, {})     -- [f]inder [b]uffers
