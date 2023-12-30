@@ -25,11 +25,21 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":NvimTreeOpen<CR>", opts)     -- [e]xplorer open
-keymap("n", "<leader>ct", ":NvimTreeCollapse<CR>", opts)    -- [c]ollapse tree
-keymap("n", "<leader>tf", ":NvimTreeFocus<CR>", opts)       -- [t]ree [f]ocus
-keymap("n", "<leader><S-f>", ":NvimTreeFindFile<CR>", opts) -- exlporer [F]ind file
+-- Nvim Tree Mappings
+keymap("n", "<C-e>", ":NvimTreeOpen<CR>", opts)             -- explorer open: CTRL+e          || this is a quick access keybind becuase the one used with leader key lags
+keymap("n", "<leader>eo", ":NvimTreeOpen<CR>", opts)        -- [e]xplorer open
+keymap("n", "<leader>ec", ":NvimTreeCollapse<CR>", opts)    -- [e]xplorer collapse            
+keymap("n", "<leader>ef", ":NvimTreeFocus<CR>", opts)       -- [e]xplorer [f]ocus
+keymap("n", "<C-q>", ":NvimTreeFocus<CR>:q<CR>", opts)      -- explorer quit                  || this is also a quick access keybind becuase i had a problem with this being slow to execute also.
 keymap("n", "<leader>eq", ":NvimTreeFocus<CR>:q<CR>", opts) -- [e]xplorer [q]uit
+
+-- Telescope Mappings
+local TelescopeStuff = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', TelescopeStuff.find_files, {})  -- finder [f]ind [f]ile
+vim.keymap.set('n', '<leader>fg', TelescopeStuff.live_grep, {})   -- [f]inder [g]rep
+vim.keymap.set('n', '<leader>fb', TelescopeStuff.buffers, {})     -- [f]inder [b]uffers
+vim.keymap.set('n', '<leader>fh', TelescopeStuff.help_tags, {})   -- [f]inder [h]elp
+
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
