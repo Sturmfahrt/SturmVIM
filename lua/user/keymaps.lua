@@ -26,7 +26,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Nvim Tree Mappings
-keymap("n", "<C-e>", ":NvimTreeOpen<CR>", opts)             -- explorer open: CTRL+e          || this is a quick access keybind becuase the one used with leader key lags
+--keymap("n", "<C-e>", ":NvimTreeOpen<CR>", opts)             -- explorer open: CTRL+e          || this is a quick access keybind becuase the one used with leader key lags
 keymap("n", "<leader>eo", ":NvimTreeOpen<CR>", opts)        -- [e]xplorer open
 keymap("n", "<leader>ec", ":NvimTreeCollapse<CR>", opts)    -- [e]xplorer collapse            
 keymap("n", "<leader>ef", ":NvimTreeFocus<CR>", opts)       -- [e]xplorer [f]ocus
